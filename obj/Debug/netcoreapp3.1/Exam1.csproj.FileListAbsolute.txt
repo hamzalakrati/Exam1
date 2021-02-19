@@ -1,0 +1,13 @@
+C:\Users\KIUTECH\Desktop\Exam1\bin\Debug\netcoreapp3.1\Exam1.exe
+C:\Users\KIUTECH\Desktop\Exam1\bin\Debug\netcoreapp3.1\Exam1.deps.json
+C:\Users\KIUTECH\Desktop\Exam1\bin\Debug\netcoreapp3.1\Exam1.runtimeconfig.json
+C:\Users\KIUTECH\Desktop\Exam1\bin\Debug\netcoreapp3.1\Exam1.runtimeconfig.dev.json
+C:\Users\KIUTECH\Desktop\Exam1\bin\Debug\netcoreapp3.1\Exam1.dll
+C:\Users\KIUTECH\Desktop\Exam1\bin\Debug\netcoreapp3.1\Exam1.pdb
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.csprojAssemblyReference.cache
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.AssemblyInfoInputs.cache
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.AssemblyInfo.cs
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.csproj.CoreCompileInputs.cache
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.dll
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.pdb
+C:\Users\KIUTECH\Desktop\Exam1\obj\Debug\netcoreapp3.1\Exam1.genruntimeconfig.cache

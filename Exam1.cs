@@ -3,6 +3,24 @@ using System.Diagnostics.Tracing;
 
 namespace Exam1
 {
+
+    public class MyEventListener : EventListener
+    {
+        protected override void OnEventSourceCreated(EventSource eventSource)
+        {
+            Console.WriteLine($"created {eventSource.Name} {eventSource.Guid}");
+        }
+
+        protected override void OnEventWritten(EventWrittenEventArgs eventData)
+        {
+            Console.WriteLine($"event id: {eventData.EventId} source: {eventData.EventSource.Name}");
+            foreach (var payload in eventData.Payload)
+            {
+                Console.WriteLine($"\t{payload}");
+            }
+        }
+    }
+
     [EventSource(Name = "EventSourceOfExam1", Guid = "45FFF0E2-7198-4E4F-9FC3-DF6934680096")]
     public class SampleEventSource : EventSource
     {
@@ -43,6 +61,7 @@ namespace Exam1
             counter.Add(1);
 
             SampleEventSource sampleEventSource = new SampleEventSource("Exam1");
+            MyEventListener listener = new MyEventListener();
         }
         class Counter
         {

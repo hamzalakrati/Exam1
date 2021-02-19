@@ -69,6 +69,26 @@ namespace Exam1
             sampleEventSource.Write("Complete", new { Info = "\nTime: " + DateTime.Now });
             sampleEventSource.Dispose();
         }
+
+        public sealed class CounterAttribute : Attribute
+        {
+            public string message { get; }
+
+            public CounterAttribute(string message)
+            {
+                this.message = message;
+            }
+            public static void GetAttribute(Type t)
+            {
+                CounterAttribute counterAttribute
+                    = (CounterAttribute)Attribute.GetCustomAttribute(t, typeof(CounterAttribute));
+
+                Console.WriteLine("ThresholdAttribute Message is: {0}", counterAttribute.message);
+            }
+
+        }
+
+        [CounterAttribute("This is my the counter for the midterm")]
         class Counter
         {
             private int counter = 0;

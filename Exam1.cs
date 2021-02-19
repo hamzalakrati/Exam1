@@ -62,6 +62,12 @@ namespace Exam1
 
             SampleEventSource sampleEventSource = new SampleEventSource("Exam1");
             MyEventListener listener = new MyEventListener();
+            listener.EnableEvents(sampleEventSource, EventLevel.LogAlways);
+            sampleEventSource.ThresholdReached("\nThe threshold was reached.");
+            sampleEventSource.Write("Complete", new { Info = "\nSender: " + counter });
+            sampleEventSource.Write("Complete", new { Info = "\nThreshold:  " + counter.GetCount() });
+            sampleEventSource.Write("Complete", new { Info = "\nTime: " + DateTime.Now });
+            sampleEventSource.Dispose();
         }
         class Counter
         {
